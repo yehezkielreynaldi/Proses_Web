@@ -1,0 +1,203 @@
+<html>
+
+<head>
+  <title>Website Toko Online</title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+
+<style type="text/css">
+  .header {
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 15px;
+
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    margin-left: 70px;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+</style>
+
+<body>
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❆
+    </div>
+    <div class="snowflake">
+      ❄
+    </div>
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❆
+    </div>
+    <div class="snowflake">
+      ❄
+    </div>
+    <div class="snowflake">
+      ❅
+    </div>
+    <div class="snowflake">
+      ❆
+    </div>
+    <div class="snowflake">
+      ❄
+    </div>
+  </div>
+
+  <div class="header"><img src="apa.png" height="80px" width="100px" align="left">
+    <div class='logo'>
+      <h1>TokoBedjo</h1>
+    </div>
+
+    <div class='navbar'>
+      <ul>
+        <li><a href='elektronik.html'>Electronic</a></li>
+        <li><a href='fashion.html'>Fashion</a></li>
+        <li><a href='sports.html'>Sports</a></li>
+        <li><a href='furniture.html'>Furniture</a></li>
+        <li><a href='otomotif.html'>Automotive</a></li>
+      </ul>
+    </div>
+  </div>
+  <h2 style="margin-left: 50px;">FORM PEMBELIAN</h2>
+  <p style="margin-left: 70px;">Isi form ini dengan data diri anda yang sebenar-benarnya.</p>
+
+  <div class="container">
+    <form action="elektronik.html">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Full Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="fullname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Phone Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="Cell Phone Number" placeholder="Your Cell Phone Number..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Item</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="Item" placeholder="Your Item..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Categories</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="Categories">
+            <option value="-select-">-select-</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Sports">Sports</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Automotive">Automotive</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Address</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="Adress" placeholder="Your Address.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <input type="submit" value="Submit"></input>
+
+      </div>
+    </form>
+  </div>
+
+
+  <div class='footer'>
+    <img style="height: 120px; width: 120px;"
+      src="https://carlisletheacarlisletheatre.org/images/paypal-logo-png-visa-3.png">
+    <p>Copyright 2019 - <a href='profil.html'>TokoBedjo</a></p>
+  </div>
+
+
+</body>
+
+</html>

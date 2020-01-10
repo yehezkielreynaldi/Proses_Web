@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <style type="text/css">
+        body {
+            background-image: url('email-pattern/email-pattern.png');
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <marquee>Welcome to TokoBedjo!</marquee>
+        <table width="250" height="100"><br><br>
+
+                <b>LOGIN:<b><br><br>
+<FORM name="login">
+    Username: <input name="username"> <br><br>
+    Password: <input name="password" type="password"> <br><br>
+    <input type=button value="Login" onClick="verifyLogin()" align="center">
+    <input type="reset">
+</FORM>
+
+<script>
+    function verifyLogin() {
+    var myForm = document.login;
+    if (myForm.username.value == "TokoBedjo" && myForm.password.value == "unsada"){
+        alert ("username dan password cocok. Silakan Berbelanja");
+        window.location.href='elektronik.html';
+    }else {
+        alert ("username atau password yang dimasukkan salah");
+    }
+}
+</script>
+</body>
